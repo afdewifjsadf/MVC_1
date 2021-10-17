@@ -88,7 +88,7 @@ public class Controller implements ActionListener {
              CPUUtiList = db.selectTOP15CPUUTilization();
              if(!CPUUtiList.isEmpty()){
                  if(CPUUtiList.size() > 15){
-                        v.show15(new ArrayList( CPUUtiList.subList(0, 15)));
+                      CPUUtiList= (new ArrayList( CPUUtiList.subList(0, 15)));
                  }
                  v.show15(CPUUtiList);
              }else{
